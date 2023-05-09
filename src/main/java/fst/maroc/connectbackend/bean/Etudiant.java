@@ -24,6 +24,7 @@ public class Etudiant {
   private String nom;
   private String prenom;
   private Sexe sexe;
+  private String code;
   @Column(columnDefinition = "DATE DEFAULT '2001-01-01'")
   private LocalDate dateNaissance;
   @ManyToOne
@@ -34,10 +35,7 @@ public class Etudiant {
   private Pere pere;
   @ManyToOne
   private Mere mere;
-  // private Image image;
-
-
-
-
+  private String image;
+  private String folderName;
 
 }

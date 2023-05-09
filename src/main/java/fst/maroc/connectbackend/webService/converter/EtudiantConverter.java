@@ -11,17 +11,15 @@ public class EtudiantConverter {
 
     EtudiantDto etudiantDto = new EtudiantDto();
     etudiantDto.setNom(etudiant.getNom());
+    etudiantDto.setCode(etudiant.getCode());
     etudiantDto.setPrenom(etudiant.getPrenom());
     etudiantDto.setNumero(etudiant.getNumero());
-    etudiantDto.setNiveau(etudiant.getNiveau());
-    etudiantDto.setDateNaissance(formatDateNaissance(etudiant.getDateNaissance()));
+    etudiantDto.setDateNaissance(etudiant.getDateNaissance());
     etudiantDto.setClasse(etudiant.getClasse());
     etudiantDto.setSexe(etudiant.getSexe());
+    etudiantDto.setImage(etudiant.getImage());
     return etudiantDto;
   }
-  private String formatDateNaissance(LocalDate dateNaissance) {
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-    return dateNaissance.format(formatter);
-  }
+
 
 }

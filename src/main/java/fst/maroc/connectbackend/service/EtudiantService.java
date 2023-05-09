@@ -36,6 +36,11 @@ public class EtudiantService {
     return etudiantDao.deleteByNumero(numero);
   }
 
+  public int save(Etudiant etudiant){
+      etudiantDao.save(etudiant);
+      return 1;
+  }
+
   public List<EtudiantDto> findAllDto(){
     List<Etudiant> etudiants = etudiantDao.findAll();
     List<EtudiantDto> etudiantDtos = new ArrayList<>();

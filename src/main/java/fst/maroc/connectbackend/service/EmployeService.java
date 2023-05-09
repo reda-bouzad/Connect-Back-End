@@ -1,16 +1,16 @@
 package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.Employe;
+import fst.maroc.connectbackend.bean.Role;
 import fst.maroc.connectbackend.dao.EmployeDao;
 import fst.maroc.connectbackend.webService.converter.EmployeConverter;
 import fst.maroc.connectbackend.webService.dto.EmployeDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.ArrayList;
 import java.util.List;
-@CrossOrigin("*")
+
 @Service
 public class EmployeService {
 
@@ -33,7 +33,28 @@ public class EmployeService {
     return employeDao.deleteByCin(cin);
   }
 
-  public long count(){ return employeDao.count(); }
+  public long count() {
+    return employeDao.count();
+  }
+
+  public int save(Employe employe) {
+    employeDao.save(employe);
+    return 1;
+  }
+
+  public List<Employe> findAllByJpql() {
+    return employeDao.findAllByJpql();
+  }
+
+  public List<Employe> findByJpqlEnseignant() {
+    Role enseignantRole = Role.Enseignant;
+    return employeDao.findByJpqlEnseignant(enseignantRole);
+  }
+
+  public Long countEmployeesByRole() {
+    Role enseignantRole = Role.Enseignant;
+    return employeDao.countEmployeesByRole(enseignantRole);
+  }
 
   public List<EmployeDto> findAllDtos() {
     List<Employe> employes = employeDao.findAll();
@@ -45,4 +66,5 @@ public class EmployeService {
     }
     return employeDtos;
   }
+
 }

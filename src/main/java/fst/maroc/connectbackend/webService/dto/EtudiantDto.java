@@ -13,10 +13,13 @@ import java.time.LocalDate;
 @Data
 public class EtudiantDto {
   private Long numero;
+  private String code;
   private String nom;
   private String prenom;
-  private String  dateNaissance;
-  private Niveau niveau;;
+  private LocalDate  dateNaissance;
+  private String niveau;;
   private Classe classe;
   private Sexe sexe;
+  private String image;
+
 }

@@ -1,5 +1,6 @@
 package fst.maroc.connectbackend.webService.dto;
 
+import fst.maroc.connectbackend.bean.Role;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -12,7 +13,8 @@ public class EmployeDto {
   private String cin;
   private LocalDate dateNaissance;
   private Double salaire;
-  private String role;
+  private Role role;
+  private String image;
   private String prime;
 
 }

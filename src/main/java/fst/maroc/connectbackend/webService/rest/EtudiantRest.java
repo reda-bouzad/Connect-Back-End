@@ -40,4 +40,9 @@ public class EtudiantRest {
     return etudiantService.deleteByNumero(numero);
   }
 
+  @PostMapping("/")
+  public int save(@RequestBody Etudiant etudiant) {
+    return etudiantService.save(etudiant);
+  }
+
 }

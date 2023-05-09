@@ -12,9 +12,8 @@ public class EmployeConverter {
     employeDto.setNom(employe.getNom());
     employeDto.setPrenom(employe.getPrenom());
     employeDto.setSalaire(employe.getSalaire());
-    employeDto.setPrime(employe.getPrime());
     employeDto.setDateNaissance(employe.getDateNaissance());
-
+    employeDto.setImage(employe.getImage());
     return employeDto;
 
   }

@@ -21,8 +21,9 @@ public class Employe {
   private String cin;
   private LocalDate dateNaissance;
   private Double salaire;
-  private String role;
-  private String prime;
+  private Role role;
   private Sexe sexe;
+  private String folderName;
+  private String image;
 
 }
