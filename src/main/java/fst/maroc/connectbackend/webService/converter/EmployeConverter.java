@@ -1,12 +1,12 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Employe;
+import fst.maroc.connectbackend.bean.employe.Employe;
 import fst.maroc.connectbackend.webService.dto.EmployeDto;
 
 public class EmployeConverter {
-  public EmployeDto toDto (Employe employe){
-    EmployeDto employeDto = new EmployeDto();
 
+  public EmployeDto toDto (Employe employe) {
+    EmployeDto employeDto = new EmployeDto();
     employeDto.setCin(employe.getCin());
     employeDto.setRole(employe.getRole());
     employeDto.setNom(employe.getNom());
@@ -15,6 +15,6 @@ public class EmployeConverter {
     employeDto.setDateNaissance(employe.getDateNaissance());
     employeDto.setImage(employe.getImage());
     return employeDto;
-
   }
+
 }

@@ -1,4 +1,4 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.etudiant;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +12,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Mere {
+public class Pere {
+
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
@@ -20,5 +21,5 @@ public class Mere {
   private String nom;
   private String prenom;
   private Long numeroTelephone;
-}
 
+}

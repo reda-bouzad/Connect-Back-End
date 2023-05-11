@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.dao;
 
-import fst.maroc.connectbackend.bean.Employe;
-import fst.maroc.connectbackend.bean.Role;
+import fst.maroc.connectbackend.bean.employe.Employe;
+import fst.maroc.connectbackend.bean.enums.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

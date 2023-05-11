@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Pere;
+import fst.maroc.connectbackend.bean.etudiant.Pere;
 import fst.maroc.connectbackend.webService.dto.PereDto;
 
 public class PereConverter {

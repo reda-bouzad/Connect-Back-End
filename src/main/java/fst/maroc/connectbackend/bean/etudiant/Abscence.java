@@ -1,5 +1,6 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.etudiant;
 
+import fst.maroc.connectbackend.bean.enums.TypeAbscence;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

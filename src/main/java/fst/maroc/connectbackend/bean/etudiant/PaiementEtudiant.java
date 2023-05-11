@@ -1,10 +1,12 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.etudiant;
 
+import fst.maroc.connectbackend.bean.employe.Employe;
+import fst.maroc.connectbackend.bean.enums.Mois;
+import fst.maroc.connectbackend.bean.etudiant.Etudiant;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -13,7 +15,7 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Paiement {
+public class PaiementEtudiant {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;

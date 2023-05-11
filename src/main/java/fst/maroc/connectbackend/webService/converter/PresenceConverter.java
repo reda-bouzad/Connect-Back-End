@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Abscence;
+import fst.maroc.connectbackend.bean.etudiant.Abscence;
 import fst.maroc.connectbackend.webService.dto.PresenceDto;
 
 public class PresenceConverter {

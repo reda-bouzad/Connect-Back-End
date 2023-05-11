@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.Identified;
+import fst.maroc.connectbackend.bean.camera.Identified;
 import fst.maroc.connectbackend.service.IdentifiedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

@@ -1,4 +1,4 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.enums;
 
 public enum Mois {
   Janvier,

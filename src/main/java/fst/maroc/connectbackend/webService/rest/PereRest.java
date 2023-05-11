@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.Pere;
+import fst.maroc.connectbackend.bean.etudiant.Pere;
 import fst.maroc.connectbackend.service.PereService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;

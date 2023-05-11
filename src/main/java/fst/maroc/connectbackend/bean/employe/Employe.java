@@ -1,5 +1,7 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.employe;
 
+import fst.maroc.connectbackend.bean.enums.Role;
+import fst.maroc.connectbackend.bean.enums.Sexe;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;

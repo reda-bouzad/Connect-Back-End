@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Niveau;
+import fst.maroc.connectbackend.bean.ecole.Niveau;
 import fst.maroc.connectbackend.webService.dto.NiveauDto;
 
 public class NiveauConverter {

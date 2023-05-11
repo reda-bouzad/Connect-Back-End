@@ -1,4 +1,4 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.ecole;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

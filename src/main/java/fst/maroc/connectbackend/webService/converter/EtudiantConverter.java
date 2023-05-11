@@ -1,10 +1,7 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Etudiant;
+import fst.maroc.connectbackend.bean.etudiant.Etudiant;
 import fst.maroc.connectbackend.webService.dto.EtudiantDto;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class EtudiantConverter {
   public EtudiantDto toDto (Etudiant etudiant){

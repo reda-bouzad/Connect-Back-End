@@ -1,22 +1,26 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.camera.Persons;
-import fst.maroc.connectbackend.service.PersonsService;
+import fst.maroc.connectbackend.service.TrackerEtudiantService;
+import fst.maroc.connectbackend.webService.dto.TrackerEtudiantDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
 @CrossOrigin("*")
+@RequestMapping("api/v1/trackeretudiant")
 @RestController
-@RequestMapping("/api/v1/persons")
-public class PersonsRest {
+public class TrackerEtudiantRest {
+
   @Autowired
-  private PersonsService personsService;
+  public TrackerEtudiantService trackerEtudiantService;
+
   @GetMapping("/")
-  public List<Persons> findAll(){
-    return personsService.findAll();
+  public List<TrackerEtudiantDto> findAllDtos() {
+    return trackerEtudiantService.findAllDtos();
   }
+
 }

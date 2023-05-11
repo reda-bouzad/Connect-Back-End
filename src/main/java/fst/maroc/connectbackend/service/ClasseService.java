@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.service;
 
-import fst.maroc.connectbackend.bean.Classe;
+import fst.maroc.connectbackend.bean.ecole.Classe;
 import fst.maroc.connectbackend.dao.ClasseDao;
 import fst.maroc.connectbackend.webService.converter.ClasseConverter;
 import fst.maroc.connectbackend.webService.dto.ClasseDto;

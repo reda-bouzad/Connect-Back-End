@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.EmployePointage;
+import fst.maroc.connectbackend.bean.camera.EmployePointage;
 import fst.maroc.connectbackend.service.EmployePointageService;
 import fst.maroc.connectbackend.webService.dto.EmployePointageDto;
 import org.springframework.beans.factory.annotation.Autowired;

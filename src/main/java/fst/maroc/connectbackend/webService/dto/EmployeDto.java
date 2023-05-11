@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.dto;
 
-import fst.maroc.connectbackend.bean.Role;
+import fst.maroc.connectbackend.bean.enums.Role;
 import lombok.Data;
 
 import java.time.LocalDate;

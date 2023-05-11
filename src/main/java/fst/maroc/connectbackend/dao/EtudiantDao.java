@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.dao;
 
-import fst.maroc.connectbackend.bean.Etudiant;
-import fst.maroc.connectbackend.bean.Sexe;
+import fst.maroc.connectbackend.bean.etudiant.Etudiant;
+import fst.maroc.connectbackend.bean.enums.Sexe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

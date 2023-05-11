@@ -1,5 +1,6 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.camera;
 
+import fst.maroc.connectbackend.bean.etudiant.Etudiant;
 import jakarta.persistence.*;
 import lombok.Data;
 

@@ -1,7 +1,6 @@
 package fst.maroc.connectbackend.webService.dto;
 
-import fst.maroc.connectbackend.bean.Niveau;
-import jakarta.persistence.ManyToOne;
+import fst.maroc.connectbackend.bean.ecole.Niveau;
 import lombok.Data;
 
 @Data

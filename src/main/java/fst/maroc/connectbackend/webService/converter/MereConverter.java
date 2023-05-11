@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Mere;
+import fst.maroc.connectbackend.bean.etudiant.Mere;
 import fst.maroc.connectbackend.webService.dto.MereDto;
 
 public class MereConverter {

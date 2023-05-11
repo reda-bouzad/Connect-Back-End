@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.Niveau;
+import fst.maroc.connectbackend.bean.ecole.Niveau;
 import fst.maroc.connectbackend.service.NiveauService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

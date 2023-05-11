@@ -1,9 +1,8 @@
 package fst.maroc.connectbackend.service;
 
-import fst.maroc.connectbackend.bean.Abscence;
+import fst.maroc.connectbackend.bean.etudiant.Abscence;
 import fst.maroc.connectbackend.dao.PresenceDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

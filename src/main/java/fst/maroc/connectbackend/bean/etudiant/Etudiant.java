@@ -1,16 +1,14 @@
-package fst.maroc.connectbackend.bean;
+package fst.maroc.connectbackend.bean.etudiant;
 
+import fst.maroc.connectbackend.bean.ecole.Classe;
+import fst.maroc.connectbackend.bean.ecole.Niveau;
+import fst.maroc.connectbackend.bean.enums.Sexe;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 @Data
 @AllArgsConstructor

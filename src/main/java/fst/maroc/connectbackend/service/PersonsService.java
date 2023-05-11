@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.service;
 
-import fst.maroc.connectbackend.bean.Persons;
+import fst.maroc.connectbackend.bean.camera.Persons;
 import fst.maroc.connectbackend.dao.PersonsDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

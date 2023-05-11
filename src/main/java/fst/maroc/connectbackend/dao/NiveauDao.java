@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.dao;
 
-import fst.maroc.connectbackend.bean.Niveau;
+import fst.maroc.connectbackend.bean.ecole.Niveau;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

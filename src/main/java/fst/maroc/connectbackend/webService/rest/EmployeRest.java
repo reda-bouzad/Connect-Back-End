@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.Employe;
+import fst.maroc.connectbackend.bean.employe.Employe;
 import fst.maroc.connectbackend.service.EmployeService;
 import fst.maroc.connectbackend.webService.dto.EmployeDto;
 import org.springframework.beans.factory.annotation.Autowired;

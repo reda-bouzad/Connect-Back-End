@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.service;
 
-import fst.maroc.connectbackend.bean.Niveau;
+import fst.maroc.connectbackend.bean.ecole.Niveau;
 import fst.maroc.connectbackend.dao.NiveauDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

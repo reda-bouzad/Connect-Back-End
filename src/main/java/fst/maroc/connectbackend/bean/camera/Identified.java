@@ -1,22 +1,19 @@
-package fst.maroc.connectbackend.bean;
-
+package fst.maroc.connectbackend.bean.camera;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
-public class Niveau {
+public class Identified {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
-  private String code;  
-  private String libelle;
+  private LocalTime time;
+  private LocalDate date;
 }

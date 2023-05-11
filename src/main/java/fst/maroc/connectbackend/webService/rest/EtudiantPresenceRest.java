@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.rest;
 
-import fst.maroc.connectbackend.bean.EtudiantAbscence;
+import fst.maroc.connectbackend.bean.camera.EtudiantAbscence;
 import fst.maroc.connectbackend.service.EtudiantPresenceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

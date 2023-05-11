@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.service;
 
-import fst.maroc.connectbackend.bean.Employe;
-import fst.maroc.connectbackend.bean.Role;
+import fst.maroc.connectbackend.bean.employe.Employe;
+import fst.maroc.connectbackend.bean.enums.Role;
 import fst.maroc.connectbackend.dao.EmployeDao;
 import fst.maroc.connectbackend.webService.converter.EmployeConverter;
 import fst.maroc.connectbackend.webService.dto.EmployeDto;

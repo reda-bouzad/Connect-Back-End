@@ -1,6 +1,6 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.EmployePointage;
+import fst.maroc.connectbackend.bean.camera.EmployePointage;
 import fst.maroc.connectbackend.webService.dto.EmployePointageDto;
 
 public class EmployePointageConverter {

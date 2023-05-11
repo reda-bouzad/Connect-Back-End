@@ -1,12 +1,8 @@
 package fst.maroc.connectbackend.webService.dto;
 
-import fst.maroc.connectbackend.bean.Classe;
-import fst.maroc.connectbackend.bean.Niveau;
-import fst.maroc.connectbackend.bean.Sexe;
-import lombok.Builder;
+import fst.maroc.connectbackend.bean.ecole.Classe;
+import fst.maroc.connectbackend.bean.enums.Sexe;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.time.LocalDate;
 

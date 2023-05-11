@@ -1,8 +1,7 @@
 package fst.maroc.connectbackend.webService.converter;
 
-import fst.maroc.connectbackend.bean.Classe;
+import fst.maroc.connectbackend.bean.ecole.Classe;
 import fst.maroc.connectbackend.webService.dto.ClasseDto;
-import lombok.Data;
 
 public class ClasseConverter {
   public ClasseDto toDto (Classe classe){
