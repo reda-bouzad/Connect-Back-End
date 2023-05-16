@@ -28,6 +28,5 @@ public interface EmployeDao extends JpaRepository<Employe , Long> {
   Long countEmployeesByRole(@Param("role") Role role);
 
 
-
   int deleteByCin(String cin);
 }

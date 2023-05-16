@@ -41,6 +41,10 @@ public class EtudiantService {
       return 1;
   }
 
+  public List<Etudiant> etudiantsNahda(){
+    return etudiantDao.findAllEtudiantNahda();
+  }
+
   public List<EtudiantDto> findAllDto(){
     List<Etudiant> etudiants = etudiantDao.findAll();
     List<EtudiantDto> etudiantDtos = new ArrayList<>();

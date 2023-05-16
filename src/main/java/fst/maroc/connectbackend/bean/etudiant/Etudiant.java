@@ -1,6 +1,7 @@
 package fst.maroc.connectbackend.bean.etudiant;
 
 import fst.maroc.connectbackend.bean.ecole.Classe;
+import fst.maroc.connectbackend.bean.ecole.Ecole;
 import fst.maroc.connectbackend.bean.ecole.Niveau;
 import fst.maroc.connectbackend.bean.enums.Sexe;
 import jakarta.persistence.*;
@@ -34,6 +35,7 @@ public class Etudiant {
   @ManyToOne
   private Mere mere;
   private String image;
+  @ManyToOne
+  private Ecole ecole;
   private String folderName;
-
 }

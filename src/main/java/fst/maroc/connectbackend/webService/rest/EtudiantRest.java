@@ -22,21 +22,30 @@ public class EtudiantRest {
   public List<EtudiantDto> findAll() {
     return etudiantService.findAllDto();
   }
+
   @GetMapping("/count")
   public long count() {
     return etudiantService.count();
   }
+
   @GetMapping("/sexe-masculin")
   public int countMasculin() {
     return etudiantService.countMasculin();
   }
+
   @GetMapping("sexe-feminin")
   public int countFeminin() {
     return etudiantService.countFeminin();
   }
+
   @DeleteMapping("/numero/{numero}")
   public int deleteByNumero(@PathVariable Long numero) {
     return etudiantService.deleteByNumero(numero);
+  }
+
+  @GetMapping("/nahda")
+  public List<Etudiant> etudiantsNahda() {
+    return etudiantService.etudiantsNahda();
   }
 
   @PostMapping("/")

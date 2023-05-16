@@ -19,7 +19,7 @@ public class ConnectBackEndApplication {
   public static void main(String[] args) throws JSONException {
     ConfigurableApplicationContext context = SpringApplication.run(ConnectBackEndApplication.class, args);
     DeepFaceApi api = context.getBean(DeepFaceApi.class);
-    api.getDataAsJSON();
+    // api.getDataAsJSON();
   }
 
 }
