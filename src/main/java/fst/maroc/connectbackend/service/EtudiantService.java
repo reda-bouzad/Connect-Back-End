@@ -13,39 +13,11 @@ import java.util.List;
 
 @Service
 public class EtudiantService {
+
   @Autowired
   private EtudiantDao etudiantDao;
 
-
-  public Etudiant findByNumero(Long numero) {
-    return etudiantDao.findByNumero(numero);
-  }
-
-
-  public long count(){ return etudiantDao.count(); }
-
-  public int countMasculin() {
-    return etudiantDao.countBySexe(Sexe.MASCULIN);
-  }
-
-  public int countFeminin() {
-    return etudiantDao.countBySexe(Sexe.FEMENIN);
-  }
-
-  public int deleteByNumero(Long numero) {
-    return etudiantDao.deleteByNumero(numero);
-  }
-
-  public int save(Etudiant etudiant){
-      etudiantDao.save(etudiant);
-      return 1;
-  }
-
-  public List<Etudiant> etudiantsNahda(){
-    return etudiantDao.findAllEtudiantNahda();
-  }
-
-  public List<EtudiantDto> findAllDto(){
+  public List<EtudiantDto>  findAllDto(){
     List<Etudiant> etudiants = etudiantDao.findAll();
     List<EtudiantDto> etudiantDtos = new ArrayList<>();
     EtudiantConverter etudiantConverter = new EtudiantConverter();
@@ -54,6 +26,67 @@ public class EtudiantService {
       etudiantDtos.add(etudiantDto);
     }
     return etudiantDtos;
+  }
+
+  public Etudiant findByCode(String code){
+    return etudiantDao.findByCode(code);
+  }
+
+  public int save(Etudiant etudiant){
+
+    // each student need to have a code
+    if (etudiant.getCode() == null || etudiant.getCode().trim().isEmpty()) {
+      return -1;
+    };
+
+    // each student need to have a nom
+    if (etudiant.getNom() == null || etudiant.getNom().trim().isEmpty()) {
+      return -2;
+    };
+
+    if (etudiant.getPrenom() == null || etudiant.getPrenom().trim().isEmpty()) {
+      return -3; // each student need to have a prenom
+    };
+
+    if ( etudiantDao.findByCode(etudiant.getCode()) != null ) {
+      return -4; // the student need to have a uniq code
+    };
+
+    if (etudiant.getSexe() == null) {
+      return -5; // the student must have a gender male or female
+    }
+
+    /* if (etudiant.getNiveau() == null) {
+      return -6; // the student must have a niveau
+    } */
+
+    etudiantDao.save(etudiant);
+    return 1;
+
+  }
+
+  public int update(Etudiant etudiant) {
+    etudiantDao.save(etudiant);
+    return 1;
+  }
+
+  public int deleteByCode(String code) {
+    etudiantDao.deleteByCode(code);
+    return 1;
+  }
+
+  public long count(){ return etudiantDao.count(); }
+
+  public int countMasculin() {
+    return etudiantDao.countBySexe(Sexe.Masculin);
+  }
+
+  public int countFeminin() {
+    return etudiantDao.countBySexe(Sexe.Feminin);
+  }
+
+  public List<Etudiant> etudiantsNahda(){
+    return etudiantDao.findAllEtudiantNahda();
   }
 
 }

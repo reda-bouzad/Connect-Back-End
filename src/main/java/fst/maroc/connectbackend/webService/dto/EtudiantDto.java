@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 @Data
 public class EtudiantDto {
-  private Long numero;
+  private String numero;
   private String code;
   private String nom;
   private String prenom;
@@ -17,5 +17,6 @@ public class EtudiantDto {
   private Classe classe;
   private Sexe sexe;
   private String image;
+  private LocalDate dateInscription;
 
 }

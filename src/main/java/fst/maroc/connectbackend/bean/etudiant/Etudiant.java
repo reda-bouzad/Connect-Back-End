@@ -8,6 +8,8 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
 
 import java.time.LocalDate;
 
@@ -16,26 +18,46 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Entity
 public class Etudiant {
+
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
-  private Long numero;
+
+  private String numero;
+
   private String nom;
+
   private String prenom;
+
   private Sexe sexe;
+
   private String code;
+
   @Column(columnDefinition = "DATE DEFAULT '2001-01-01'")
   private LocalDate dateNaissance;
+
+  @Column(nullable = false, updatable = false)
+  @CreationTimestamp
+  private LocalDate dateInscription;
+
   @ManyToOne
   private Niveau niveau;
+
   @ManyToOne
+  @JoinColumn(columnDefinition = "varchar(255) DEFAULT 'Classe:A'" )
   private Classe classe;
+
   @ManyToOne
   private Pere pere;
+
   @ManyToOne
   private Mere mere;
+
   private String image;
+
   @ManyToOne
   private Ecole ecole;
+
   private String folderName;
+
 }

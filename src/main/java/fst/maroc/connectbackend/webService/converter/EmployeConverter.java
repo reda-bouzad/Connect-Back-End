@@ -14,6 +14,7 @@ public class EmployeConverter {
     employeDto.setSalaire(employe.getSalaire());
     employeDto.setDateNaissance(employe.getDateNaissance());
     employeDto.setImage(employe.getImage());
+    employeDto.setSexe(employe.getSexe());
     return employeDto;
   }
 

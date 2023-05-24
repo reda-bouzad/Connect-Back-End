@@ -3,6 +3,8 @@ package fst.maroc.connectbackend.bean.employe;
 import fst.maroc.connectbackend.bean.enums.Role;
 import fst.maroc.connectbackend.bean.enums.Sexe;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,6 +19,7 @@ import java.time.LocalDate;
 public class Employe {
 
   @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   private String nom;
   private String prenom;

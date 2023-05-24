@@ -1,6 +1,7 @@
 package fst.maroc.connectbackend.webService.dto;
 
 import fst.maroc.connectbackend.bean.enums.Role;
+import fst.maroc.connectbackend.bean.enums.Sexe;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -16,5 +17,6 @@ public class EmployeDto {
   private Role role;
   private String image;
   private String prime;
+  private Sexe sexe;
 
 }

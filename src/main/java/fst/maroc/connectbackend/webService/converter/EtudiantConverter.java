@@ -10,12 +10,14 @@ public class EtudiantConverter {
     etudiantDto.setNom(etudiant.getNom());
     etudiantDto.setCode(etudiant.getCode());
     etudiantDto.setPrenom(etudiant.getPrenom());
-    etudiantDto.setNumero(etudiant.getNumero());
     etudiantDto.setDateNaissance(etudiant.getDateNaissance());
     etudiantDto.setClasse(etudiant.getClasse());
     etudiantDto.setSexe(etudiant.getSexe());
     etudiantDto.setImage(etudiant.getImage());
+    etudiantDto.setNumero(etudiant.getNumero());
+    etudiantDto.setDateInscription(etudiant.getDateInscription());
     return etudiantDto;
+
   }
 
 
