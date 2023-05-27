@@ -7,6 +7,7 @@ public class EtudiantConverter {
   public EtudiantDto toDto (Etudiant etudiant){
 
     EtudiantDto etudiantDto = new EtudiantDto();
+    etudiantDto.setId(etudiant.getId());
     etudiantDto.setNom(etudiant.getNom());
     etudiantDto.setCode(etudiant.getCode());
     etudiantDto.setPrenom(etudiant.getPrenom());

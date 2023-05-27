@@ -98,6 +98,7 @@ public class EmployeService {
     return employeDao.countEmployeesByRole(enseignantRole);
   }
 
+
   // list of all employees (Dto)
   public List<EmployeDto> findAllDtos() {
     List<Employe> employes = employeDao.findAll();
@@ -109,5 +110,7 @@ public class EmployeService {
     }
     return employeDtos;
   }
+
+
 
 }

@@ -30,7 +30,7 @@ public class DeepFaceApi {
     headers.setContentType(MediaType.MULTIPART_FORM_DATA);
     // Set the request body as a MultiValueMap
     MultiValueMap<String, Object> requestBody = new LinkedMultiValueMap<>();
-    requestBody.add("image_path", "/home/reda/deepface/Achouri.jpg");
+    requestBody.add("image_path", "/home/reda/deepface/img4.jpeg");
     requestBody.add("db_path", "/home/reda/Pictures/persons");
     // Create the request entity
     HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
@@ -43,7 +43,6 @@ public class DeepFaceApi {
     JSONObject jsonResponse = new JSONObject(response);
     String date = jsonResponse.getString("date");
     String time = jsonResponse.getString("time");
-    int numPersons = jsonResponse.getInt("num_persons");
     JSONArray persons = jsonResponse.getJSONArray("persons");
 
     // Insert data into the identified table
@@ -66,6 +65,7 @@ public class DeepFaceApi {
       // Insert data into the identified_etudiant table
       String identifiedEtudiantSql = "INSERT INTO detection (identified_id, etudiant_id) VALUES (?, ?)";
       jdbcTemplate.update(identifiedEtudiantSql, identifiedId, etudiantId);
+
     }
   }
 }

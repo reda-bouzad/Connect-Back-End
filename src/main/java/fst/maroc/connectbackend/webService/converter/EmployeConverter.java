@@ -7,6 +7,7 @@ public class EmployeConverter {
 
   public EmployeDto toDto (Employe employe) {
     EmployeDto employeDto = new EmployeDto();
+    employeDto.setId(employe.getId());
     employeDto.setCin(employe.getCin());
     employeDto.setRole(employe.getRole());
     employeDto.setNom(employe.getNom());

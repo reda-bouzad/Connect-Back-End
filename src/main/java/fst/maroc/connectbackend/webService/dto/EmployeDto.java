@@ -9,6 +9,7 @@ import java.time.LocalDate;
 @Data
 public class EmployeDto {
 
+  private Long id;
   private String nom;
   private String prenom;
   private String cin;
