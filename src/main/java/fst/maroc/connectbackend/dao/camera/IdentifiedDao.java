@@ -1,4 +1,4 @@
-package fst.maroc.connectbackend.dao;
+package fst.maroc.connectbackend.dao.camera;
 
 import fst.maroc.connectbackend.bean.camera.Identified;
 import org.springframework.data.jpa.repository.JpaRepository;

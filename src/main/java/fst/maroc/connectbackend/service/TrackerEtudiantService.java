@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.etudiant.TrackerEtudiant;
-import fst.maroc.connectbackend.dao.TrackerEtudiantDao;
+import fst.maroc.connectbackend.dao.etudiant.TrackerEtudiantDao;
 import fst.maroc.connectbackend.webService.converter.TrackerEtudiantConverter;
 import fst.maroc.connectbackend.webService.dto.TrackerEtudiantDto;
 import org.springframework.beans.factory.annotation.Autowired;

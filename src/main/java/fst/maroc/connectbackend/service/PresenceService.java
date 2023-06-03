@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.etudiant.Abscence;
-import fst.maroc.connectbackend.dao.PresenceDao;
+import fst.maroc.connectbackend.dao.etudiant.PresenceDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

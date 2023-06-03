@@ -1,4 +1,4 @@
-package fst.maroc.connectbackend.dao;
+package fst.maroc.connectbackend.dao.etudiant;
 
 import fst.maroc.connectbackend.bean.etudiant.PaiementEtudiant;
 import org.springframework.data.jpa.repository.JpaRepository;

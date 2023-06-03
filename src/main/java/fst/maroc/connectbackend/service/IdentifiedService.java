@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.camera.Identified;
-import fst.maroc.connectbackend.dao.IdentifiedDao;
+import fst.maroc.connectbackend.dao.camera.IdentifiedDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

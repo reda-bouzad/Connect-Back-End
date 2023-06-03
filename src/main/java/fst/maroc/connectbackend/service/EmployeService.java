@@ -2,7 +2,7 @@ package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.employe.Employe;
 import fst.maroc.connectbackend.bean.enums.Role;
-import fst.maroc.connectbackend.dao.EmployeDao;
+import fst.maroc.connectbackend.dao.employe.EmployeDao;
 import fst.maroc.connectbackend.webService.converter.EmployeConverter;
 import fst.maroc.connectbackend.webService.dto.EmployeDto;
 import org.springframework.beans.factory.annotation.Autowired;

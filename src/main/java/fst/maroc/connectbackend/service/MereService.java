@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.etudiant.Mere;
-import fst.maroc.connectbackend.dao.MereDao;
+import fst.maroc.connectbackend.dao.etudiant.MereDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

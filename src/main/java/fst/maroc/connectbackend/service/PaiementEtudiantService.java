@@ -1,7 +1,7 @@
 package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.etudiant.PaiementEtudiant;
-import fst.maroc.connectbackend.dao.PaiementEtudiantDao;
+import fst.maroc.connectbackend.dao.etudiant.PaiementEtudiantDao;
 import fst.maroc.connectbackend.webService.converter.PaiementEtudiantConverter;
 import fst.maroc.connectbackend.webService.dto.PaiementEtudiantDto;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@ package fst.maroc.connectbackend.service;
 
 import fst.maroc.connectbackend.bean.etudiant.Etudiant;
 import fst.maroc.connectbackend.bean.enums.Sexe;
-import fst.maroc.connectbackend.dao.EtudiantDao;
+import fst.maroc.connectbackend.dao.etudiant.EtudiantDao;
 import fst.maroc.connectbackend.webService.converter.EtudiantConverter;
 import fst.maroc.connectbackend.webService.dto.EtudiantDto;
 import org.springframework.beans.factory.annotation.Autowired;

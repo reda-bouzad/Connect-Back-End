@@ -1,15 +1,12 @@
 package fst.maroc.connectbackend.service;
 
-import fst.maroc.connectbackend.bean.employe.Employe;
 import fst.maroc.connectbackend.bean.employe.Pointage;
-import fst.maroc.connectbackend.dao.EmployeDao;
-import fst.maroc.connectbackend.dao.PointageDao;
+import fst.maroc.connectbackend.dao.employe.EmployeDao;
+import fst.maroc.connectbackend.dao.employe.PointageDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -34,7 +31,6 @@ public class PointageService {
     pointageDao.save(pointage);
     return 1;
   }
-
 
   public boolean existsByDateAndEmployeId(Long employeId) {
     LocalDate currentDate = LocalDate.now();
