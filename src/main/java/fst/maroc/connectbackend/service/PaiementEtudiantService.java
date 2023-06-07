@@ -30,4 +30,13 @@ public class PaiementEtudiantService {
     }
     return paiementEtudiantDtos;
   }
+
+    public int addPayment(PaiementEtudiant paiementEtudiant) {
+    paiementEtudiantDao.save(paiementEtudiant);
+    return 1;
+    }
+
+  public List<PaiementEtudiant> findByEtudiant(Long etudiantId) {
+    return paiementEtudiantDao.findByEtudiant_Id(etudiantId);
+  }
 }
